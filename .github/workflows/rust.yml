@@ -19,6 +19,6 @@ jobs:
     - name:
       run: cargo clean
     - name: Build
-      run: ./cargo-release-strip.sh
+      run: sh ./cargo-release-strip.sh
     - name: Run tests
       run: cargo test --release --verbose -- --nocapture
