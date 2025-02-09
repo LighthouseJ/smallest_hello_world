@@ -5,7 +5,7 @@
 uild the release version to ensure it's optimized:
 
 ```sh
-cargo build --release
+./cargo-release-strip.sh
 ```
 
 Then, run the test:

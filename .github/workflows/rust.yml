@@ -16,7 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name:
+      run: cargo clean
     - name: Build
-      run: cargo build --release --verbose
+      run: ./cargo-release-strip.sh
     - name: Run tests
       run: cargo test --release --verbose -- --nocapture

@@ -11,3 +11,4 @@ panic = "abort"         # Remove stack unwinding, reducing binary size
 opt-level = "z"         # Optimize for size
 
 [dependencies]
+
