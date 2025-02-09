@@ -1,0 +1,13 @@
+[package]
+name = "smallest_hello_world"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true              # Enable Link-Time Optimization
+codegen-units = 1       # Reduce number of parallel compilation units for better optimization
+strip = "symbols"       # Automatically strip symbols (equivalent to `strip --strip-all`)
+panic = "abort"         # Remove stack unwinding, reducing binary size
+opt-level = "z"         # Optimize for size
+
+[dependencies]
