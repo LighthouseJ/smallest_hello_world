@@ -3,7 +3,7 @@ use std::process::Command;
 
 fn main() {
     let target = std::env::var("CARGO_TARGET_DIR").unwrap_or_else(|_| "target".to_string());
-    let binary_path = format!("{}/release/hello", target);
+    let binary_path = format!("{}/release/smallest_hello_world", target);
 
     // Strip additional symbols
     Command::new("strip")
